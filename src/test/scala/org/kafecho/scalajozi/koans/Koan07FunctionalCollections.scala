@@ -16,8 +16,17 @@ class Koan07Collections extends KoanSuite {
     evenNumbers should equal (List(1,3,5,7))
   }
   
-  koan("Map: apply a function to all elements of a collection."){
+  koan("Finding an element within a collection"){
+    val meaningOfLife = 42
+    val answers = List(1,3,42,90,120)
+    val answer : Option[Int] = answers.find(elt => elt == meaningOfLife)
     
+    // answer is an option. See the Koan on that topic.
+    answer.foreach (a => println ("Yeah, I found it"))
+  }
+  
+  koan("Map: apply a function to all elements of a collection."){
+
     val numbers = List(1,2,3,4)
     
     val squared = numbers.map ( n => n * n)
@@ -42,33 +51,43 @@ class Koan07Collections extends KoanSuite {
         // note the two _s below indicate the first and second args respectively
         list.reduceLeft( (a,b) => a + b ) should equal (16)
         list.reduceLeft( (a,b) => a * b ) should equal (105)
-    }
+  }
   
+  koan("Sort a list by a predicate"){
+    val list = List(1,3,4,9,10,15,40,42,60)
+    list.sortWith( (a,b) => a > b)
+  }
   
+    
   koan("In Scala, Strings are considered collection of characters."){
-    // Longest word in Afrikaans: http://en.wikipedia.org/wiki/Longest_words#Afrikaans
-    val longestWord = "Tweedehandsemotorverkoopsmannevakbondstakingsvergaderingsameroeperstoespraakskrywerspersverklaringuitreikingsmediakonferensieaankondiging"
+    val word = "vereeniging"
 
     // Let's find how many 'e's in that word.
-    val theEs = longestWord.toLowerCase.filter(c => c == 'e')
+    val theEs = word.filter(c => c == 'e')
     
-    theEs.size should equal (20)
+    theEs.size should equal ( __ )
 
-    // Find the 'o's:
-    val theOs = longestWord.toLowerCase.filter(c => ???) // Complete this
+    // Find the 'g's:
+    val theGs = word.toLowerCase.filter(c => ???) // Complete this
     
-    theOs.size should equal (6)
-    
-    // Another more generic approach using groupBy
+    theGs.size should equal ( __ )
+  }
+  
+  koan("Use groupBy work generic grouping."){
+
+    val word = "vereeniging"
+
     // groupBy: for a given character c, find all characters in the string that are c.
-    val groups : Map[Char,String]= longestWord.toLowerCase().groupBy( c => c)
+    val groups : Map[Char,String]= word.groupBy( c => c)
 
     // Let's work out how often a given character appears. 
     val counts = groups.mapValues(s => s.length())
     
-    counts('e') should equal(20)
+    println (s"Counts: $counts")
     
-    counts('o') should equal (6)
+    counts('e') should equal(3)
+    
+    counts('g') should equal (2)
   }
 
   

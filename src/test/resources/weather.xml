@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+		<rss version="2.0" xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">
+			<channel>
+		
+<title>Yahoo! Weather - Johannesburg, ZA</title>
+<link>http://us.rd.yahoo.com/dailynews/rss/weather/Johannesburg__ZA/*http://weather.yahoo.com/forecast/SFXX0023_c.html</link>
+<description>Yahoo! Weather for Johannesburg, ZA</description>
+<language>en-us</language>
+<lastBuildDate>Fri, 09 Aug 2013 1:59 pm SAST</lastBuildDate>
+<ttl>60</ttl>
+<yweather:location city="Johannesburg" region=""   country="South Africa"/>
+<yweather:units temperature="C" distance="km" pressure="mb" speed="km/h"/>
+<yweather:wind chill="14"   direction="120"   speed="16.09" />
+<yweather:atmosphere humidity="57"  visibility=""  pressure="846.6"  rising="0" />
+<yweather:astronomy sunrise="6:35 am"   sunset="5:41 pm"/>
+<image>
+<title>Yahoo! Weather</title>
+<width>142</width>
+<height>18</height>
+<link>http://weather.yahoo.com</link>
+<url>http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif</url>
+</image>
+<item>
+<title>Conditions for Johannesburg, ZA at 1:59 pm SAST</title>
+<geo:lat>-26.2</geo:lat>
+<geo:long>28.04</geo:long>
+<link>http://us.rd.yahoo.com/dailynews/rss/weather/Johannesburg__ZA/*http://weather.yahoo.com/forecast/SFXX0023_c.html</link>
+<pubDate>Fri, 09 Aug 2013 1:59 pm SAST</pubDate>
+<yweather:condition  text="Unknown"  code="3200"  temp="14"  date="Fri, 09 Aug 2013 1:59 pm SAST" />
+<description><![CDATA[
+<img src="http://l.yimg.com/a/i/us/we/52/3200.gif"/><br />
+<b>Current Conditions:</b><br />
+Unknown, 14 C<BR />
+<BR /><b>Forecast:</b><BR />
+Fri - Mostly Clear. High: 18 Low: 8<br />
+Sat - Sunny. High: 19 Low: 8<br />
+Sun - Mostly Sunny. High: 21 Low: 7<br />
+Mon - Sunny. High: 19 Low: 6<br />
+Tue - Sunny. High: 23 Low: 9<br />
+<br />
+<a href="http://us.rd.yahoo.com/dailynews/rss/weather/Johannesburg__ZA/*http://weather.yahoo.com/forecast/SFXX0023_c.html">Full Forecast at Yahoo! Weather</a><BR/><BR/>
+(provided by <a href="http://www.weather.com" >The Weather Channel</a>)<br/>
+]]></description>
+<yweather:forecast day="Fri" date="9 Aug 2013" low="8" high="18" text="Mostly Clear" code="33" />
+<yweather:forecast day="Sat" date="10 Aug 2013" low="8" high="19" text="Sunny" code="32" />
+<yweather:forecast day="Sun" date="11 Aug 2013" low="7" high="21" text="Mostly Sunny" code="34" />
+<yweather:forecast day="Mon" date="12 Aug 2013" low="6" high="19" text="Sunny" code="32" />
+<yweather:forecast day="Tue" date="13 Aug 2013" low="9" high="23" text="Sunny" code="32" />
+<guid isPermaLink="false">SFXX0023_2013_08_13_7_00_SAST</guid>
+</item>
+</channel>
+</rss>
+
+<!-- api8.weather.ch1.yahoo.com Fri Aug  9 14:45:43 PST 2013 -->
