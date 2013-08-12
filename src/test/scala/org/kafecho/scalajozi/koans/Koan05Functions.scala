@@ -29,7 +29,7 @@ class Koan05Functions extends KoanSuite {
   
   koan("A higher order function takes a function as a parameter."){
     
-    // in Scala you can define methods and functions inside other functions.
+    // In Scala you can define methods inside other methods.
     def processNumber (n : Int, fn: Int => Int) : Int = fn(n)
     
     val triple = (x: Int) => x * 3
@@ -37,6 +37,6 @@ class Koan05Functions extends KoanSuite {
     processNumber( 1, triple ) should equal ( __ )
 
     // The function you pass as a parameter can be defined inline.
-    processNumber (1, x => x * x) should equal ( __ )
+    processNumber (2, x => x * x) should equal ( __ )
   }
 }

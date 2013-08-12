@@ -14,7 +14,7 @@ class Koan03Strings extends KoanSuite{
 	    msg(4) should equal ( __ )
 	}
 
-	koan("Syntatic sugar"){
+	koan("The Apply method applied to Strings"){
 	  val msg = "Hello world"
 	  
 	  msg(0) should equal (msg.apply(0))

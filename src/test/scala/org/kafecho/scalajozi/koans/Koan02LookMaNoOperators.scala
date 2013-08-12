@@ -29,7 +29,7 @@ class Koan02LookMaNoOperators extends KoanSuite {
         Rational(this.num * another.num, this.denum * another.denum)
       }
 
-      Rational(1, 2) * Rational(2, 1) should equal(Rational(2, 2))
+      Rational(1, 2) * Rational(2, 1) should equal( __ )
     }
   }
 

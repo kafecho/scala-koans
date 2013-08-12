@@ -9,7 +9,7 @@ class Koan15ImplicitConversions extends KoanSuite {
   koan("Working with frequencies"){
    case class Hertz(value: Long)
   object Conversions {
-    /** Monkey patch a Long to add extra frequency related methods.*/
+    /** Monkey patch a Long to add frequency related methods.*/
     implicit class FrequencyConversion(what: Long) {
       def Hz = Hertz(what)
       def kHz = Hertz(what * 1000)
@@ -24,6 +24,5 @@ class Koan15ImplicitConversions extends KoanSuite {
 
   frequency.isInstanceOf[Hertz] should be ( __ )
  
-  frequency.isInstanceOf[Int] should be ( __ )
   }
 }
